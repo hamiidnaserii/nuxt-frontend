@@ -1,0 +1,22 @@
+@use 'primary-shabnam';
+$font-family: 'primary-font';
+* {
+  font-family: $font-family;
+}
+
+.ql-editor-editor *{
+  direction: ltr !important;
+
+}
+.ql-editor *{
+  direction: rtl !important;
+  
+}
+
+#headlessui-portal-root {
+  direction: ltr !important;
+}
+
+.label-require{
+  @apply before:content-['*'] before:ms-0.5 before:text-red-500;
+}
